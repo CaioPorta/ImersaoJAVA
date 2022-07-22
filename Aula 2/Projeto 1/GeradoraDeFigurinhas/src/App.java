@@ -8,8 +8,9 @@ import java.util.Map;
 
 public class App {
     public static void main(String[] args) throws Exception { // Método principal
-        // fazer uma conexão HTTP e buscar os top 250 filmes
+        /*// fazer uma conexão HTTP e buscar os top 250 filmes
         String url = "https://imdb-api.com/en/API/Top250Movies/k_beojdf0c";
+        String url = "https://alura-filmes.herokuapp.com/conteudos";
         URI endereco = URI.create(url);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder(endereco).GET().build();
@@ -27,6 +28,8 @@ public class App {
             System.out.println(filme.get("image"));
             System.out.println(filme.get("imDbRating"));
             System.out.println();
-        }
+        }*/
+        var geradora = new GeradoraDeFigurinhas();
+        geradora.cria();
     }
 }
